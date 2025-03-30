@@ -45,7 +45,7 @@ header {
 .menu {
     position: fixed;
     top: 0;
-    left: -70%; /* Ẩn menu ban đầu */
+    left: -90%; /* Ẩn menu ban đầu */
     width: 70%; /* Chỉ chiếm 70% màn hình thay vì toàn bộ */
     max-width: 300px; /* Giới hạn tối đa */
     height: 100%;
