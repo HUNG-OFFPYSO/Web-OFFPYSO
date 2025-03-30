@@ -34,26 +34,32 @@ header {
 
 /* Biểu tượng menu (3 gạch) ở góc trái trên cùng */
 .menu-icon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
     font-size: 24px;
     cursor: pointer;
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
     z-index: 1000;
-}
+        }
 
 /* Điều chỉnh menu để chỉ bao phủ đúng nội dung */
 .menu {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    transition: background 0.3s ease-in-out;
 }
 .menu.active {
     left: 0;
@@ -68,6 +74,9 @@ header {
 }
 .menu a:hover {
     background: #3498db;
+}
+.menu.show {
+    left: 0;
 }
 
 .menu .close-btn {
