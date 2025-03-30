@@ -33,13 +33,20 @@ header {
 }
 
 /* Biểu tượng menu (3 gạch) ở góc trái trên cùng */
-.menu-icon {
+.menu {
+    display: none;
     position: absolute;
-    top: 20px;
+    top: 50px;
     left: 20px;
-    font-size: 24px;
-    cursor: pointer;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.menu.active {
+    display: block;
+}
+
 
 /* Phần liên hệ */
 .contact {
