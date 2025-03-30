@@ -8,12 +8,17 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <div class="menu">
-        <a href="#">Trang Chủ</a>
-        <a href="#">Blog</a>
-        <a href="#">Dự Án</a>
-        <a href="#">Quản Lý</a>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+        <a href="#" onclick="toggleMenu()">Trang Chủ</a>
+        <a href="#" onclick="toggleMenu()">Blog</a>
+        <a href="#" onclick="toggleMenu()">Dự Án</a>
+        <a href="#" onclick="toggleMenu()">Quản Lý</a>
     </div>
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
 
         <div class="profile">
             <img src="assets/avatar.png" alt="Avatar">
