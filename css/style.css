@@ -33,6 +33,15 @@ header {
 }
 
 /* Biểu tượng menu (3 gạch) ở góc trái trên cùng */
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
 .menu {
     display: none;
     position: absolute;
