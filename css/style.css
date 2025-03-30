@@ -29,7 +29,8 @@ header {
 }
 
 .about h2 {
-    text-align: left; /* Căn trái chữ "Giới thiệu" */
+    text-align: left;  /* Căn chữ về bên trái */
+    margin-left: 20px; /* Tạo khoảng cách với lề trái */
 }
 
 /* Phần liên hệ */
