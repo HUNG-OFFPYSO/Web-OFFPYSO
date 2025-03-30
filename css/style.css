@@ -1,79 +1,49 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* Header */
 header {
-    background: #222;
-    color: white;
-    padding: 10px 0;
-    position: relative;
-}
-
-/* Avatar */
-.avatar {
-    width: 120px; /* Kích thước avatar */
-    height: 120px;
-    border-radius: 50%; /* Bo tròn avatar */
-    object-fit: cover; /* Hiển thị đẹp */
-    display: block;
-    margin: 0 auto; /* Căn giữa */
-}
-
-
-/* Tiêu đề */
-h1 {
-    margin: 5px 0;
-}
-
-/* Menu 3 gạch */
-.menu-toggle {
-    font-size: 30px;
-    cursor: pointer;
-    text-align: right;
-    padding: 10px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-/* Menu ẩn */
-nav {
-    display: none;
-    flex-direction: column;
+    background-color: #222;
     text-align: center;
-    background: #333;
-}
-
-nav a {
-    display: block;
+    padding: 20px;
     color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-bottom: 1px solid #444;
 }
 
-nav a:hover {
-    background: #444;
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
 }
 
-/* Liên hệ */
-.icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 5px;
+/* Giới thiệu */
+.about {
+    padding: 20px;
+    margin-top: 50px; /* Đẩy phần này xuống dưới */
 }
-.contact-container {
+
+.about h2 {
+    text-align: left; /* Căn trái chữ "Giới thiệu" */
+}
+
+/* Phần liên hệ */
+.contact {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
+
+.contact-container {
+    display: flex;
+    gap: 15px;
+}
+
 .contact-btn {
     display: flex;
     align-items: center;
@@ -96,11 +66,13 @@ nav a:hover {
     background-color: #1877f2;
     border-color: #0d5ec9;
 }
+
 .contact-btn:hover {
     transform: scale(1.1);
+    opacity: 0.9;
 }
+
 .icon {
     width: 24px;
     height: 24px;
-}
 }
