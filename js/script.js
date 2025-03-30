@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.querySelector(".menu-icon");
-    const menu = document.querySelector(".menu");
-
-    menuIcon.addEventListener("click", function () {
-        menu.classList.toggle("active");
-    });
-});
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+    } else {
+        menu.style.left = "0px";
+    }
+}
