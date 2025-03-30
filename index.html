@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HƯNG_OFFPYSO</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
+        <img src="assets/avatar.png" alt="Avatar" class="avatar">
         <h1>HƯNG_OFFPYSO ✅</h1>
-        <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
             <a href="index.html">Home</a>
             <a href="blog.html">Blog</a>
             <a href="projects.html">Dự Án</a>
             <a href="admin.html">Quản Lý</a>
         </nav>
     </header>
+
     <section>
         <h2>Giới thiệu</h2>
         <p>Xin chào, mình là HƯNG_OFFPYSO!</p>
-        <p>Liên hệ: <a href="https://t.me/HUNG_OFFPYSO">Telegram</a> | <a href="https://facebook.com/HUNG_OFFPYSO">Facebook</a></p>
+        <p>Liên hệ:  
+            <a href="https://t.me/HUNG_OFFPYSO">
+                <img src="assets/telegram.png" class="icon"> Telegram
+            </a> 
+            |  
+            <a href="https://facebook.com/HUNG_OFFPYSO">
+                <img src="assets/facebook.png" class="icon"> Facebook
+            </a>
+        </p>
     </section>
 </body>
 </html>
