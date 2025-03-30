@@ -68,26 +68,39 @@ nav a:hover {
     vertical-align: middle;
     margin-right: 5px;
 }
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
 .contact-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 12px;
-    border-radius: 20px;
-    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 2px solid transparent;
     font-weight: bold;
+    text-decoration: none;
     color: white;
+    transition: 0.3s ease-in-out;
 }
 
 .telegram {
-    background-color: #0088cc; /* Màu nền Telegram */
+    background-color: #0088cc;
+    border-color: #005f99;
 }
 
 .facebook {
-    background-color: #1877f2; /* Màu nền Facebook */
+    background-color: #1877f2;
+    border-color: #0d5ec9;
 }
-
+.contact-btn:hover {
+    transform: scale(1.1);
+}
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+}
 }
