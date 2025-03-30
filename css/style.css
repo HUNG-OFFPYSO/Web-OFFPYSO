@@ -45,14 +45,16 @@ header {
 .menu {
     position: fixed;
     top: 0;
-    left: -250px; /* Ẩn menu ban đầu */
-    width: 250px;
+    left: -70%; /* Ẩn menu ban đầu */
+    width: 70%; /* Chỉ chiếm 70% màn hình thay vì toàn bộ */
+    max-width: 300px; /* Giới hạn tối đa */
     height: 100%;
     background: white;
-    box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
     transition: left 0.3s;
     padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Thêm bóng để nhìn đẹp hơn */
 }
+
 
 .menu a {
     display: block;
