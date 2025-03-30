@@ -1,79 +1,81 @@
-/* Reset CSS */
-* {
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
 }
 
-/* Header */
+/* Phần header */
 header {
     background-color: #222;
-    text-align: center;
-    padding: 20px;
     color: white;
+    padding: 20px;
+    position: relative;
 }
 
-.avatar {
+/* Avatar và tên */
+.profile {
+    margin-top: 20px;
+}
+
+.profile img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 3px solid white;
-    object-fit: cover;
 }
 
-/* Giới thiệu */
-.about {
-    padding: 20px;
-    margin-top: 50px; /* Đẩy phần này xuống dưới */
+.profile h1 {
+    font-size: 24px;
+    margin-top: 10px;
 }
 
-.about h2 {
-    text-align: left;  /* Căn chữ về bên trái */
-    margin-left: 20px; /* Tạo khoảng cách với lề trái */
+/* Biểu tượng menu (3 gạch) ở góc trái trên cùng */
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* Phần liên hệ */
 .contact {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
-.contact-container {
-    display: flex;
-    gap: 15px;
-}
-
-.contact-btn {
-    display: flex;
+.contact .button {
+    display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    margin: 5px;
     border-radius: 25px;
-    border: 2px solid transparent;
-    font-weight: bold;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
     color: white;
-    transition: 0.3s ease-in-out;
+    border: none;
+}
+
+.contact .button i {
+    margin-right: 10px;
 }
 
 .telegram {
     background-color: #0088cc;
-    border-color: #005f99;
 }
 
 .facebook {
     background-color: #1877f2;
-    border-color: #0d5ec9;
 }
 
-.contact-btn:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
+/* Căn "Giới thiệu" về bên trái */
+.about {
+    text-align: left;
+    padding: 20px;
 }
-
-.icon {
-    width: 24px;
-    height: 24px;
+.about h2 {
+    margin: 0;
 }
