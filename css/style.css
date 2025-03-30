@@ -16,12 +16,14 @@ header {
 
 /* Avatar */
 .avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 120px; /* Kích thước avatar */
+    height: 120px;
+    border-radius: 50%; /* Bo tròn avatar */
+    object-fit: cover; /* Hiển thị đẹp */
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Căn giữa */
 }
+
 
 /* Tiêu đề */
 h1 {
