@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
+    const menuIcon = document.querySelector(".menu-icon");
     const menu = document.querySelector(".menu");
 
-    menuToggle.addEventListener("click", function () {
+    menuIcon.addEventListener("click", function () {
         menu.classList.toggle("active");
     });
 });
