@@ -42,17 +42,19 @@ header {
     z-index: 1000;
 }
 
+/* Điều chỉnh menu để chỉ bao phủ đúng nội dung */
 .menu {
     position: fixed;
     top: 0;
     left: -100%; /* Ẩn menu ban đầu */
-    width: 70%; /* Chỉ chiếm 70% màn hình thay vì toàn bộ */
-    max-width: 300px; /* Giới hạn tối đa */
-    height: 100%;
+    width: auto; /* Chỉ rộng bằng nội dung */
+    min-width: 200px; /* Đảm bảo không quá nhỏ */
+    max-width: 300px; /* Giới hạn chiều rộng tối đa */
+    height: auto; /* Chỉ cao bằng nội dung */
     background: blue;
     transition: left 0.3s;
-    padding-top: 60px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Thêm bóng để nhìn đẹp hơn */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
 .menu.active {
     left: 0;
