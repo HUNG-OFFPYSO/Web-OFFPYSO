@@ -46,26 +46,28 @@ header {
 .menu {
     position: fixed;
     top: 0;
-    left: -100%; /* Ẩn menu ban đầu */
-    width: auto; /* Chỉ rộng bằng nội dung */
-    min-width: 200px; /* Đảm bảo không quá nhỏ */
-    max-width: 300px; /* Giới hạn chiều rộng tối đa */
-    height: auto; /* Chỉ cao bằng nội dung */
-    background: blue;
-    transition: left 0.3s;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: background 0.3s ease-in-out;
 }
 .menu.active {
     left: 0;
 }
 
 .menu a {
-    display: block;
-    padding: 15px;
+    color: white;
     text-decoration: none;
-    color: black;
-    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+.menu a:hover {
+    background: #3498db;
 }
 
 .menu .close-btn {
