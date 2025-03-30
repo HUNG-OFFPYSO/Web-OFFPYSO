@@ -68,3 +68,26 @@ nav a:hover {
     vertical-align: middle;
     margin-right: 5px;
 }
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.telegram {
+    background-color: #0088cc; /* Màu nền Telegram */
+}
+
+.facebook {
+    background-color: #1877f2; /* Màu nền Facebook */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
