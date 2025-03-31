@@ -1,16 +1,31 @@
-document.addEventListener("DOMContentLoaded", function () { let menu = document.querySelector(".menu"); let menuIcon = document.querySelector(".menu-icon"); let closeBtn = document.querySelector(".close-btn");
+document.addEventListener("DOMContentLoaded", function () { const starContainer = document.createElement("div"); starContainer.id = "star-container"; document.body.appendChild(starContainer);
 
-// Khi bấm vào icon 3 gạch, mở menu
-menuIcon.addEventListener("click", function () {
-    menu.classList.add("active");
-    menu.style.left = "0"; // Hiển thị menu hoàn toàn
-    menu.style.height = "auto"; // Chỉ chiếm đủ nội dung
+function createShootingStar() {
+    const star = document.createElement("div");
+    star.classList.add("shooting-star");
+
+    const startX = Math.random() * window.innerWidth;
+    const startY = Math.random() * window.innerHeight * 0.3; // Xuất hiện từ trên
+    const endX = startX + Math.random() * 200 - 100; // Bay theo hướng ngẫu nhiên
+    const endY = window.innerHeight;
+
+    star.style.left = `${startX}px`;
+    star.style.top = `${startY}px`;
+    document.getElementById("star-container").appendChild(star);
+
+    star.animate([
+        { transform: `translate(0, 0)`, opacity: 1 },
+        { transform: `translate(${endX - startX}px, ${endY - startY}px)`, opacity: 0 }
+    ], {
+        duration: 2000 + Math.random() * 3000,
+        easing: "linear",
+        iterations: 1
+    });
+
+    setTimeout(() => star.remove(), 5000);
+}
+
+setInterval(createShootingStar, 800);
+
 });
 
-// Khi bấm vào nút X, đóng menu
-closeBtn.addEventListener("click", function () {
-    menu.classList.remove("active");
-    menu.style.left = "-100%"; // Đảm bảo menu biến mất hoàn toàn
-});
-
-});
