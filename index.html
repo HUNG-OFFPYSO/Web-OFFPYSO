@@ -1,43 +1,58 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!DOCTYPE html><html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HƯNG_OFFPYSO</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
+<script src="script.js"></script>
 <body>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <div class="menu" id="menu">
-        <a href="#" onclick="toggleMenu()">Trang Chủ</a>
-        <a href="#" onclick="toggleMenu()">Blog</a>
-        <a href="#" onclick="toggleMenu()">Dự Án</a>
-        <a href="#" onclick="toggleMenu()">Quản Lý</a>
-    </div>
-    <script>
-        function toggleMenu() {
-            document.getElementById("menu").classList.toggle("show");
-        }
-
+    <header>
         <div class="profile">
             <img src="assets/avatar.png" alt="Avatar">
             <h1>HƯNG_OFFPYSO</h1>
         </div>
-    </header>
-
-    <section class="contact">
-        <a href="https://t.me/yourtelegram" class="button telegram">
+    </header><div id="content">
+    <section class="nav-buttons">
+        <a href="https://t.me/meomeoonthi" class="button telegram">
             <i class="fab fa-telegram-plane"></i> Telegram
         </a>
-        <a href="https://facebook.com/yourfacebook" class="button facebook">
+        <a href="https://facebook.com/hungoffpyso" class="button facebook">
             <i class="fab fa-facebook-f"></i> Facebook
         </a>
+        <a href="https://www.tiktok.com/@hung_offpyso.1" class="button tiktok">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+        <a href="123.com" class="button blog">
+            <i class="fas fa-blog"></i> Blog
+        </a>
+        <a href="456.com" class="button projects">
+            <i class="fas fa-project-diagram"></i> Dự Án
+        </a>
+        <a href="779.com" class="button management">
+            <i class="fas fa-tasks"></i> Quản Lý
+        </a>
     </section>
+</div>
 
-    <section class="about">
-        <h2>Giới thiệu</h2>
-        <p>Xin chào, mình là <strong>HƯNG_OFFPYSO</strong>!</p>
-    </section>
+<!-- Hiệu ứng tuyết rơi -->
+<div id="snow-container"></div>
+<script>
+    function createSnowflake() {
+        const snowflake = document.createElement("div");
+        snowflake.classList.add("snowflake");
+        snowflake.style.left = Math.random() * 100 + "vw";
+        snowflake.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        snowflake.style.opacity = Math.random();
+        document.getElementById("snow-container").appendChild(snowflake);
+        
+        setTimeout(() => {
+            snowflake.remove();
+        }, 5000);
+    }
+
+    setInterval(createSnowflake, 200);
+</script>
+
 </body>
 </html>
